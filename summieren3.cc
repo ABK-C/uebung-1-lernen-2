@@ -1,6 +1,7 @@
 #include<iostream>
 #include <fstream> 
 #include<string>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() { ;
@@ -23,6 +24,7 @@ std::ofstream datout("summieren4.cc");
 datout << dattxt << std::endl; 
 datout.close(); 
 
-//Bitte in Konsole eingeben:    g++ summieren4.cc -o summieren4      und      ./summieren4
+system("g++ summieren4.cc -o summieren4");
+system("./summieren4");
 
 }
