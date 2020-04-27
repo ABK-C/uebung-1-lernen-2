@@ -55,3 +55,9 @@ fin2.close();
 mout.close();
 vout.close();
 }
+
+//Die neune Berechnung des Mittelwertes kann zur Alten Mathematisch umgeformt werden, 
+//sodass das Ergebniss natürlich gleich ist.
+//Die neunen Varianzen werden mit dem jeweiligen Mittelwert der 9 Zahlen berechnet,
+//welcher sich jedoch von dem Gesammtmittelwert unterscheidet, sodass der Mittelwert
+//der neuen Varianzen nicht der Varianz aller Werte entspricht.
