@@ -24,6 +24,6 @@ if (( 57 < e ) || ( e < 48 )) { e= 48 ;}     //entfernen des Rest chars falls wh
 datout <<  c+e-96 << std::endl;              //chars addieren und zu Zahlen umwandel (-2* '0' = - 96)
 
 }}
-datout.close();                              //Dokumente schließe
+datout.close();                              //Dokumente schließen
 datin.close();
 }
