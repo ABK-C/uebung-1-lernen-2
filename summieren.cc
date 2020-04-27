@@ -21,7 +21,7 @@ datin.get(d);                                                          //zweiten
 e = d;                                                                 //char speichern um außerhalb von while zu benutzen
 }
 if (( 57 < e ) || ( e < 48 )) { e= 48 ;}     //entfernen des Rest chars falls while durch f beendet wurde
-datout <<  c+e-96 << std::endl;              //chars addieren und zu zahle um wandel (-2* '0' = - 96)
+datout <<  c+e-96 << std::endl;              //chars addieren und zu Zahlen umwandel (-2* '0' = - 96)
 
 }}
 datout.close();                              //Dokumente schließen
