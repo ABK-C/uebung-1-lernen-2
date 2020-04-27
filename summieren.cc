@@ -1,32 +1,29 @@
 #include<iostream>
 #include <fstream> 
-#include<string>
-using namespace std;
 
-int main() { ;
-std::ifstream dat("daten.txt"); 
-int dat11 ;
-int dat12 ;
-std::string dattxt = "" ;
+int main () {
 
-for (int i=1; i<= 233 ; ++i) {;
-dat >> dat11 ;
-dat >> dat12 ;
-dattxt = dattxt + to_string( dat11 + dat12 ) + "\n" ;
-
-};
-
-dat >> dat11 ;
-dat >> dat12 ;
-dattxt = dattxt + to_string( dat11 + dat12 ) ;
-
-dat.close() ;
-
+std::ifstream datin("daten.txt");            //Dokumente öffnen
 std::ofstream datout("datensumme.txt"); 
-datout << dattxt << std::endl; 
-datout.close(); 
 
-//std::cout << dattxt << std::endl ;
+char c;                                      //Variablen definieren
+char e;
 
-//test_Alex
+while (datin.get(c))                         //schleife immer nächstes char aus datin bis zum Dokumentenende
+
+{  
+if (( 57 >= c ) && ( c >= 48 ))              //wenn char c zwischen '0' (=48) oder '9' (=57) ist
+{
+
+for (char d = 0 , f = 0 ; (((d > 57)  ||( d < 48 )) && (f<100)); ++f ) //suchen der zweiten zahl aus chars
+{                                                                      //falls Dokument zu ende f=100 Abbruchbedingung
+datin.get(d);                                                          //zweiten char bekommen
+e = d;                                                                 //char speichern um außerhalb von while zu benutzen
+}
+if (( 57 < e ) || ( e < 48 )) { e= 48 ;}     //entfernen des Rest chars falls while durch f beendet wurde
+datout <<  c+e-96 << std::endl;              //chars addieren und zu zahle um wandel (-2* '0' = - 96)
+
+}}
+datout.close();                              //Dokumente schließen
+datin.close();
 }
