@@ -29,7 +29,7 @@ for(int i=1; i<= N; i++){
 vari = vari1 / N;
 stdabw = sqrt(vari);
 
-cout << mitW << endl << vari << endl << stdabw << endl;
+cout << mitW << "\r\n" << vari << "\r\n" << stdabw << endl;
 
 fin1.close();
 fin2.close();
