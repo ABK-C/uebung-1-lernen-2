@@ -47,8 +47,8 @@ for(int i=1 ; i<= N/M; i++)
   
 }
 
-mout << "\nMittelwert: " << GmitW;
-vout << "\nMittelwert: " << Gvari;
+cout << GmitW << endl;
+cout << Gvari << endl;
 
 fin1.close();
 fin2.close();
